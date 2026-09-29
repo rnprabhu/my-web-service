@@ -11,8 +11,8 @@ from jose import jwt, JWTError
 
 import os
 
-from database import engine, SessionLocal, Base
-import models
+from Backend.database import engine, SessionLocal, Base
+from Backend import models
 
 
 # =========================================
