@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="robots"
+        content="noindex, nofollow"
+    >
+
+    <title>Prabhu Labs — Admin Login</title>
+
+    <link
+        rel="stylesheet"
+        href="login.css"
+    >
+
+</head>
+
+
+<body>
+
+    <main class="login-page">
+
+        <!-- Decorative background -->
+
+        <div class="glow glow-one"></div>
+
+        <div class="glow glow-two"></div>
+
+
+        <!-- Login card -->
+
+        <section class="login-card">
+
+            <div class="logo">
+
+                <span>&lt;/&gt;</span>
+
+            </div>
+
+
+            <p class="eyebrow">
+                PRABHU LABS
+            </p>
+
+
+            <h1>
+                Admin Access
+            </h1>
+
+
+            <p class="description">
+                Sign in to manage your project enquiries.
+            </p>
+
+
+            <form id="loginForm">
+
+                <!-- Username -->
+
+                <div class="field">
+
+                    <label for="username">
+                        Username
+                    </label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Enter username"
+                        autocomplete="username"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Password -->
+
+                <div class="field">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Error -->
+
+                <div
+                    id="loginError"
+                    class="login-error"
+                ></div>
+
+
+                <!-- Button -->
+
+                <button
+                    type="submit"
+                    id="loginButton"
+                >
+                    SIGN IN
+                </button>
+
+            </form>
+
+
+            <a
+                href="../index.html"
+                class="back-link"
+            >
+                ← Back to Prabhu Labs
+            </a>
+
+
+            <p class="security-note">
+                🔒 Secure administrator area
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

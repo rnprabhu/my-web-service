@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prabhu Labs — Admin Dashboard</title>
+
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                &lt;/&gt;
+            </div>
+
+            <div>
+                <h2>Prabhu Labs</h2>
+                <span>Admin Panel</span>
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#" class="active">
+                Dashboard
+            </a>
+
+            <a href="#enquiries">
+                Enquiries
+            </a>
+
+            <a href="../index.html">
+                View Website
+            </a>
+
+            <button id="logoutBtn" class="logout-btn">
+                Logout
+            </button>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <span>Prabhu Labs</span>
+
+            <small>
+                Admin Dashboard
+            </small>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
+
+    <main class="main">
+
+
+        <!-- HEADER -->
+
+        <header class="topbar">
+
+            <div>
+
+                <p class="eyebrow">
+                    PRABHU LABS
+                </p>
+
+                <h1>
+                    Dashboard
+                </h1>
+
+                <p class="subtitle">
+                    Manage your project enquiries.
+                </p>
+
+            </div>
+
+
+            <a href="../index.html" class="website-btn">
+                View Website →
+            </a>
+
+        </header>
+
+
+
+        <!-- =====================================
+             STATS
+        ====================================== -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <span>
+                    TOTAL ENQUIRIES
+                </span>
+
+                <strong id="totalEnquiries">
+                    0
+                </strong>
+
+                <small>
+                    All submitted enquiries
+                </small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    WEBSITE PROJECTS
+                </span>
+
+                <strong id="websiteProjects">
+                    0
+                </strong>
+
+                <small>
+                    Website related enquiries
+                </small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    OTHER PROJECTS
+                </span>
+
+                <strong id="otherProjects">
+                    0
+                </strong>
+
+                <small>
+                    Bots, apps & custom work
+                </small>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             ENQUIRIES
+        ====================================== -->
+
+        <section class="enquiries-section" id="enquiries">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        PROJECT REQUESTS
+                    </p>
+
+                    <h2>
+                        Recent Enquiries
+                    </h2>
+
+                </div>
+
+
+                <button id="refreshBtn" class="refresh-btn">
+                    ↻ Refresh
+                </button>
+
+            </div>
+            <div class="enquiry-tools">
+
+                <input type="text" id="searchEnquiries" placeholder="Search enquiries...">
+
+                <select id="serviceFilter">
+
+                    <option value="all">
+                        All Services
+                    </option>
+
+                    <option value="website">
+                        Websites
+                    </option>
+
+                    <option value="telegram">
+                        Telegram Bots
+                    </option>
+
+                    <option value="webapp">
+                        Web Apps
+                    </option>
+
+                    <option value="other">
+                        Other Projects
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div id="enquiriesContainer" class="enquiries-container">
+
+                <div class="loading">
+                    Loading enquiries...
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>

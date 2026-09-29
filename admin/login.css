@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #050505;
+
+    color: #ffffff;
+
+    min-height: 100vh;
+
+}
+
+
+/* =========================================
+   PAGE
+========================================= */
+
+.login-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================
+   BACKGROUND GLOW
+========================================= */
+
+.glow {
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    border-radius: 50%;
+
+    filter: blur(120px);
+
+    opacity: 0.08;
+
+    pointer-events: none;
+
+}
+
+
+.glow-one {
+
+    background: #ffffff;
+
+    top: -250px;
+
+    left: -200px;
+
+}
+
+
+.glow-two {
+
+    background: #777777;
+
+    bottom: -300px;
+
+    right: -200px;
+
+}
+
+
+/* =========================================
+   LOGIN CARD
+========================================= */
+
+.login-card {
+
+    width: 100%;
+
+    max-width: 430px;
+
+    background: rgba(14, 14, 14, 0.92);
+
+    border: 1px solid #242424;
+
+    border-radius: 20px;
+
+    padding: 42px;
+
+    position: relative;
+
+    z-index: 2;
+
+    box-shadow:
+        0 30px 80px
+        rgba(0, 0, 0, 0.45);
+
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+
+    width: 54px;
+
+    height: 54px;
+
+    border-radius: 15px;
+
+    background: #ffffff;
+
+    color: #080808;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    margin-bottom: 28px;
+
+}
+
+
+.eyebrow {
+
+    color: #777;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+
+}
+
+
+h1 {
+
+    font-size: 34px;
+
+    letter-spacing: -1px;
+
+}
+
+
+.description {
+
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-top: 10px;
+
+    margin-bottom: 32px;
+
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.field {
+
+    margin-bottom: 20px;
+
+}
+
+
+.field label {
+
+    display: block;
+
+    color: #aaa;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+}
+
+
+.field input {
+
+    width: 100%;
+
+    padding: 14px 15px;
+
+    background: #090909;
+
+    color: #ffffff;
+
+    border: 1px solid #292929;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+
+}
+
+
+.field input::placeholder {
+
+    color: #4d4d4d;
+
+}
+
+
+.field input:focus {
+
+    border-color: #666;
+
+    background: #0c0c0c;
+
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.login-error {
+
+    min-height: 18px;
+
+    color: #ff6b6b;
+
+    font-size: 12px;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+#loginButton {
+
+    width: 100%;
+
+    border: none;
+
+    background: #ffffff;
+
+    color: #080808;
+
+    padding: 14px;
+
+    border-radius: 9px;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+#loginButton:hover {
+
+    background: #dddddd;
+
+    transform: translateY(-1px);
+
+}
+
+
+#loginButton:disabled {
+
+    opacity: 0.55;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+.back-link {
+
+    display: block;
+
+    text-align: center;
+
+    margin-top: 24px;
+
+    color: #777;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+}
+
+
+.back-link:hover {
+
+    color: #ffffff;
+
+}
+
+
+.security-note {
+
+    text-align: center;
+
+    color: #444;
+
+    font-size: 10px;
+
+    margin-top: 28px;
+
+    letter-spacing: 0.3px;
+
+}
+
